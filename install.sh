@@ -8,11 +8,8 @@ echo "Installing prerequisites"
 apt update
 apt upgrade
 apt install samba puredata wiringpi git -y
-
-echo "Getting files"
 git clone https://github.com/the-raspberry-pi-guy/lcd
 git clone https://github.com/garthz/pdwiringPi
-git clone https://github.com/lyfadeo/joanna
 
 echo "Startup setup"
 cp launcher.sh /home/pi/launcher.sh
