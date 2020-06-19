@@ -1,0 +1,10 @@
+## Index exemple ##
+
+,, each line starting with "start" and ending with "end ;" sets a sequence ,,
+
+start, name Lorem, a play 1 un.wav, b stop 1 3000, c play 2 fx.wav, d next, end ;
+start, name Ipsum, a next play 1 deux.wav, c next, d prev, end ;
+
+,, do not begin any comment (or follow any comma) with start or end ,,
+
+start, name Dolor sit amet, a play 1 trois.wav, b goto 1, c custom message, e custom egassem, end ;

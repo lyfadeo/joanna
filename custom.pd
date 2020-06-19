@@ -1,0 +1,26 @@
+#N canvas 595 356 139 337 12;
+#X obj 16 60 inlet;
+#X obj 16 137 outlet~;
+#X obj 18 189 outlet~;
+#X obj 20 240 outlet~;
+#X obj 25 291 outlet~;
+#X obj 16 84 s custom_in;
+#N canvas 428 318 456 400 custom 1;
+#X text 9 333 object "r custom_in" inputs [message] from index.txt
+command "custom [message]". object "s~ custom_out1" through "s~ custom_out4"
+outputs audio.;
+#X obj 38 80 exemple1;
+#X obj 37 115 exemple2;
+#X text 9 15 register your custom patches by creating an abstraction
+here;
+#X restore 15 17 pd custom;
+#X text 14 38 ^ click ^;
+#X obj 16 112 r~ custom_out1;
+#X obj 18 164 r~ custom_out2;
+#X obj 19 216 r~ custom_out3;
+#X obj 24 266 r~ custom_out4;
+#X connect 0 0 5 0;
+#X connect 8 0 1 0;
+#X connect 9 0 2 0;
+#X connect 10 0 3 0;
+#X connect 11 0 4 0;
