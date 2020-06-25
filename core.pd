@@ -1,4 +1,4 @@
-#N canvas 636 101 691 353 12;
+#N canvas 444 195 691 353 12;
 #X obj 152 75 bng 15 250 50 0 empty empty next 17 7 0 10 -262144 -1
 -1;
 #X obj 373 146 bng 15 250 50 0 empty empty B 17 7 0 10 -262144 -1 -1
@@ -103,14 +103,14 @@
 #X obj 474 178 inlet;
 #X obj 447 97 inlet;
 #X text 89 14 command;
-#X msg 503 275 next;
+#X msg 503 275;
 #X msg 540 348;
 #X obj 24 45 inlet;
 #X text 23 16 clear;
-#X msg 408 54 play 1 un.wav;
+#X msg 408 54;
 #X msg 24 89 set;
-#X msg 447 132 stop 1 3000;
-#X msg 474 205 play 2 fx.wav;
+#X msg 447 132;
+#X msg 474 205;
 #X text 406 9 A;
 #X text 445 79 B;
 #X text 473 158 C;
@@ -414,6 +414,8 @@ custom message, f 65;
 #X connect 18 0 19 0;
 #X connect 19 0 6 0;
 #X restore 22 75 pd tcpio;
+#X obj 517 244 /~;
+#X obj 517 210 osc~ 30000;
 #X connect 0 0 11 0;
 #X connect 1 0 13 3;
 #X connect 2 0 13 2;
@@ -448,3 +450,5 @@ custom message, f 65;
 #X connect 23 0 3 0;
 #X connect 24 0 8 0;
 #X connect 25 0 7 0;
+#X connect 31 0 15 0;
+#X connect 32 0 31 0;
